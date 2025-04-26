@@ -7,5 +7,6 @@ Suit la [méthode par exploration exhaustive](https://fr.wikipedia.org/wiki/Mod%
 installer cmake et sfml  
 
 cd build  
+cmake ..  
 make  
 ./labyrinthe  
