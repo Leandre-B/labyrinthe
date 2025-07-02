@@ -35,7 +35,7 @@ void draw_laby(bool** topWall, bool** leftWall, int m, int n){
     for(int i = 0;i<m+1;++i){
       for(int j = 0;j<n;++j){
         if(topWall[i][j]==true){
-          topWallDraw.setPosition(sf::Vector2f(j*20,i*20));
+          topWallDraw.setPosition(sf::Vector2f(50+j*20,50+i*20));
           fenetre.draw(topWallDraw);
         }
       }
@@ -45,7 +45,7 @@ void draw_laby(bool** topWall, bool** leftWall, int m, int n){
     for(int i = 0;i<m;++i){
       for(int j = 0;j<n+1;++j){
         if(leftWall[i][j]==true){
-          leftWallDraw.setPosition(sf::Vector2f(j*20,i*20));
+          leftWallDraw.setPosition(sf::Vector2f(50+j*20,50+i*20));
           fenetre.draw(leftWallDraw);
         }
       }
